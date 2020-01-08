@@ -1,5 +1,5 @@
 <?php 
-//mijn spel aimane chouhaibi
+//aimane chouhaibi
 $mijn_hand = '';
 $Computer = '';
 $resultaat = '';
@@ -36,8 +36,8 @@ function disp_hand(string $hand): string {
     }
 }
 //resulaat 
-function e(string $str, string $charset = 'UTF-8'): string {
-    return htmlspecialchars($str, ENT_QUOTES | ENT_HTML5, $charset);
+function e(string $str, string $charset = 'UTF-8'): string {return htmlspecialchars  
+    ($str, ENT_QUOTES | ENT_HTML5, $charset);
 }
 ?>
 
@@ -50,7 +50,7 @@ function e(string $str, string $charset = 'UTF-8'): string {
 <body>
     <h1>steen papier schaar </h1>
     <p>mijn keuze：<?php print e(disp_hand($mijn_hand)); ?></p>
-    <p>tegenstander：<?php print e(disp_hand($Computer));  ?></p>
+    <p>computer kiest：<?php print e(disp_hand($Computer));  ?></p>
     <p>resultaat：<?php print e($result); ?></p>
     
     <form method="post">
